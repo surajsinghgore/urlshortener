@@ -12,7 +12,6 @@ const [redirectUrl,setRedirectUrl]=useState(undefined);
 const [clickCount,setClickCount]=useState(undefined);
 // url short
 const shortUrl=async()=>{
-
 let res=await fetch('https://urlshortener-production-4187.up.railway.app/api/URLPOST',{
 method:"POST",
 headers:{"Content-Type": "application/json"},
