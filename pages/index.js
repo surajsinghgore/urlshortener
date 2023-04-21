@@ -1,7 +1,7 @@
 import Footer from '../components/Footer'
 import Head from 'next/head'
 import {  useToasts } from 'react-toast-notifications';
-const URL='http://localhost:3000/';
+const URL='https://urlshortener-production-4187.up.railway.app/';
 import Header from '../components/Header'
 import { useEffect, useState } from 'react'
 export default function Home() {
@@ -13,7 +13,7 @@ const [clickCount,setClickCount]=useState(undefined);
 // url short
 const shortUrl=async()=>{
 
-let res=await fetch('http://localhost:3000/api/URLPOST',{
+let res=await fetch('https://urlshortener-production-4187.up.railway.app/api/URLPOST',{
 method:"POST",
 headers:{"Content-Type": "application/json"},
 body:JSON.stringify({url:input})

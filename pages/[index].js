@@ -11,7 +11,7 @@ const redirectUrl=async()=>{
 if(shortID!==undefined){
 
 
-const res=await fetch(`http://localhost:3000/api/RedirectToURL?shortID=${shortID}`)
+const res=await fetch(`https://urlshortener-production-4187.up.railway.app/api/RedirectToURL?shortID=${shortID}`)
 const data=await res.json();
 // 500
 if(res.status==500){
