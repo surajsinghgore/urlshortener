@@ -12,7 +12,7 @@ const [redirectUrl,setRedirectUrl]=useState(undefined);
 const [clickCount,setClickCount]=useState(undefined);
 // url short
 const shortUrl=async()=>{
-let res=await fetch('https://urlshortener-production-4187.up.railway.app/api/URLPOST',{
+let res=await fetch('https://ssg-x6g0.onrender.com/api/URLPOST',{
 method:"POST",
 headers:{"Content-Type": "application/json"},
 body:JSON.stringify({url:input})
