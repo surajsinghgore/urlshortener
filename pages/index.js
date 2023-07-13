@@ -1,7 +1,7 @@
 import Footer from '../components/Footer'
 import Head from 'next/head'
 import {  useToasts } from 'react-toast-notifications';
-const URL='https://ssg-x6g0.onrender.com';
+const URL='https://ssg-x6g0.onrender.com/';
 import Header from '../components/Header'
 import { useEffect, useState } from 'react'
 export default function Home() {
